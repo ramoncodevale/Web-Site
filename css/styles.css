@@ -22,7 +22,7 @@ body {
   align-items: center;
 }
 
-.nav .logo h2 {
+.nav .logo .titulo-meta-data {
   font-size: 1.8rem;
   font-weight: bold;
   color: white;
@@ -60,7 +60,7 @@ body {
   background: #6927ff;
 }
 
-.img-1 {
+.img-programming{
   width: 600px;
   height: 600px;
   animation: bounce 1s infinite alternate;
@@ -93,18 +93,18 @@ body {
   align-items: center;
 }
 
-.home .text {
+.home .texto  {
   width: 35%;
 }
 
-.home .text h5 {
+.home .texto .titulo-advance {
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 4px;
   color: #b091f8;
 }
 
-.home .text h1 {
+.home .texto .titulo-businnes {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -113,7 +113,7 @@ body {
   padding-bottom: 10px;
 }
 
-.home .text p {
+.home .texto .texto-far-awai{
   font-size: 1rem;
   letter-spacing: 1px;
   color: white;
@@ -121,7 +121,7 @@ body {
   padding-bottom: 12px;
 }
 
-.home .text button {
+.home .texto .btn-get {
   background-color: #0ea5e7;
   border: 1px solid #6925ff;
   font-size: 1rem;
@@ -133,7 +133,7 @@ body {
   box-shadow: 0px 15px 30px -12px rgb(0 0 0 / 20%);
 }
 
-.home .text button:hover {
+.home .texto .btn-get:hover {
   background: transparent;
 }
 
@@ -141,6 +141,92 @@ body {
   width: 52%;
 }
 
-.home .back img-1 {
+.home .back img-programming {
   width: 100%;
+}
+
+/* Container-Section */
+.container-section-1 {
+   margin-top: 200px;
+}
+
+.titulo-about {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.container-about {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.img-container-texto {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img {
+  width: 400px;
+  margin-left: 30px;
+}
+
+.titulo-overfiew {
+  text-align: center;
+  margin-left: 180px;
+  color: white;
+}
+
+.texto-business {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 90px;
+}
+
+/* Container Information */
+.container-information {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.titulo-chose-us {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.container-texto-information {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.texto-information {
+  margin-top: 150px;
+  color: white;
+  text-align: center;
+}
+
+.container-section-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.titulo-services {
+  text-align: center;
+  color: white;
+  margin-top: 180px;
+}
+
+.texto-services {
+  color: white;
+  margin-bottom: 60px;
 }
