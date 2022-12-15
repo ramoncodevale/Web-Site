@@ -7,6 +7,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+html{
+  height: 100%;
+  min-height: 100vh;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -60,7 +65,7 @@ body {
   background: #6927ff;
 }
 
-.img-programming{
+.img-programming {
   width: 600px;
   height: 600px;
   animation: bounce 1s infinite alternate;
@@ -68,21 +73,21 @@ body {
 }
 
 @keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-15px);
-    }
+  from {
+    transform: translateY(0px);
   }
-  @-webkit-keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-15px);
-    }
+  to {
+    transform: translateY(-15px);
   }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
 
 .home {
   margin: 0 7rem;
@@ -93,7 +98,7 @@ body {
   align-items: center;
 }
 
-.home .texto  {
+.home .texto {
   width: 35%;
 }
 
@@ -113,7 +118,7 @@ body {
   padding-bottom: 10px;
 }
 
-.home .texto .texto-far-awai{
+.home .texto .texto-far-awai {
   font-size: 1rem;
   letter-spacing: 1px;
   color: white;
@@ -141,13 +146,13 @@ body {
   width: 52%;
 }
 
-.home .back img-programming {
+.home .back .img-programming {
   width: 100%;
 }
 
 /* Container-Section */
 .container-section-1 {
-   margin-top: 200px;
+  margin-top: 200px;
 }
 
 .titulo-about {
@@ -230,3 +235,95 @@ body {
   color: white;
   margin-bottom: 60px;
 }
+
+/* Cards */
+.container-cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.titulo-card {
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.cards {
+  width: 200px;
+  height: 250px;
+  background-color: #407bff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+  margin-bottom: 150px;
+}
+
+.cards:hover {
+  background-color: #6925ff;
+}
+
+.img-services {
+  width: 200px;
+}
+
+/* Footer */
+footer{
+  margin-top: auto;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.titulo-footer {
+  text-align: center;
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-business-time {
+  padding-left: 20px;
+}
+
+/* Responsividade */
+
+/* Smartphone */
+/* Smartphone */
+/* @media screen and (max-width: 767px) {
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-1 {
+  margin-top: 10px;
+}
+
+.container-sobre-mim {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.texto-sobre-mim {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+} */
