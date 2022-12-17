@@ -115,7 +115,7 @@ body {
   color: #b091f8;
 }
 
-.home .texto .titulo-businnes {
+.home .texto  {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -334,11 +334,19 @@ footer {
 
   .home {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .texto-far-awai{
+    display: flex;
+    justify-content: center;
     flex-direction: column;
   }
 
   .texto {
     display: block;
+    
   }
 
   .titulo-advance {
