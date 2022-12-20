@@ -1,98 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Site</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <div class="nav">
-        <div class="logo">
-            <h2 class="titulo-meta-data">MetaData</h2>
-        </div>
-        <div class="navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Members</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"><span>Get Started</span></a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="home">
-        <div class="texto">
-        <h5 class="titulo-advance">ADVANCE STRATEGY</h5>
-        <p class="texto-far-awai">Far far away, behind the word mountains, far from the countries Vokalia <br/>
-        and Consonantia, there live the blind texts.</p>
-        <button class="btn-get">Get in touch</button>
-        </div>
-        <div class="back">
-            <img class="img-programming" src="./img/Lo-fi concept-rafiki.png" alt="Foto Business">
-        </div>
-    </div>
-
-        <div class="container-section-1">
-        <h1 class="titulo-about">About</h1>
-        <div class="container-about">
-            <div class="img-container-texto">     
-            <img class="img" src="./img/Source code-amico.png" alt="Computador Website">
-            <p class="texto-business">This businnes website provides many services <br />
-            to make life more purposeful and fulfilling <br /> for you, your family, and more! </p>
-           </div>
-      </div>
-        <div class="container-information">
-            <h1 class="titulo-chose-us">Why chose Us?</h1>
-        </div>
-         <div class="container-texto-information">
-            <p class="texto-information">We help you to organise information <br />
-            to make life more simple and enjoyable.<br/>
-            for you, your family, and more!</p>
-            <img class="img" src="./img/Code review-amico.png">
-        </div>
-        </div>
-
-        <div class="container-section-2">
-            <div class="services">
-                <h1 class="titulo-services">Services and Projects</h1>
-                <div class="container-cards">
-                <div class="cards">
-                 <h3 class="titulo-card">Services</h3>
-                 <img class="img-services" src="./img/Sharing Ideas-bro.png" alt="services img">
-                 <button class="btn-services">Services</button>
-                </div>
-                <div class="cards">
-                    <h3 class="titulo-card">Business</h3>
-                    <img class="img-services" src="./img/Business Plan-bro.png" alt="Business img">
-                    <button class="btn-services">Business</button>
-                   </div>
-                   <div class="cards">
-                    <h3 class="titulo-card">Projects</h3>
-                    <img class="img-services" src="./img/Storyboard-bro.png" alt="Projects img">
-                    <button class="btn-services">Projects</button>
-                   </div>
-                   <div class="cards">
-                    <h3 class="titulo-card">Progress</h3>
-                    <img class="img-services" src="./img/Progress overview-bro.png" alt="Projects img">
-                    <button class="btn-services">Progress</button>
-                </div>
-                </div>
-
-                <div class="container-footer">
-                 <h1 class="titulo-footer">Business</h1>
-                </div>
-            <div class="icons">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-business-time"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Site</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo">
+                <h2 class="titulo-meta-data">MetaData</h2>
             </div>
+            <div class="nav" id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile"
+                    aria-haspopup="true"
+                    aria-controls="menu" aria-expanded="false">Menu
+                    <span id="hamburguer"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                </ul>
             </div>
-        </body>
-</html>
+        </header>
+
+        <div class="home">
+            <div class="texto">
+                <h5 class="titulo-advance">ADVANCE STRATEGY</h5>
+                <p class="texto-far-awai">Far far away, behind the word
+                    mountains, far from the countries Vokalia <br/>
+                        and Consonantia, there live the blind texts.</p>
+                    <button class="btn-get">Get in touch</button>
+                </div>
+                <div class="back">
+                    <img class="img-programming" src="./img/Lo-fi
+                        concept-rafiki.png" alt="Foto Business">
+                </div>
+            </div>
+
+            <div class="container-section-1">
+                <h1 class="titulo-about">About</h1>
+                <div class="container-about">
+                    <div class="img-container-texto">
+                        <img class="img" src="./img/Source code-amico.png"
+                            alt="Computador Website">
+                        <p class="texto-business">This businnes website provides
+                            many services <br />
+                            to make life more purposeful and fulfilling <br />
+                            for you, your family, and more! </p>
+                    </div>
+                </div>
+                <div class="container-information">
+                    <h1 class="titulo-chose-us">Why chose Us?</h1>
+                </div>
+                <div class="container-texto-information">
+                    <p class="texto-information">We help you to organise
+                        information <br />
+                        to make life more simple and enjoyable.<br/>
+                            for you, your family, and more!</p>
+                        <img class="img" src="./img/Code review-amico.png">
+                    </div>
+                </div>
+
+                <div class="container-section-2">
+                    <div class="services">
+                        <h1 class="titulo-services">Services and Projects</h1>
+                        <div class="container-cards">
+                            <div class="cards">
+                                <h3 class="titulo-card">Services</h3>
+                                <img class="img-services" src="./img/Sharing
+                                    Ideas-bro.png" alt="services img">
+                                <button class="btn-services">Services</button>
+                            </div>
+                            <div class="cards">
+                                <h3 class="titulo-card">Business</h3>
+                                <img class="img-services" src="./img/Business
+                                    Plan-bro.png" alt="Business img">
+                                <button class="btn-services">Business</button>
+                            </div>
+                            <div class="cards">
+                                <h3 class="titulo-card">Projects</h3>
+                                <img class="img-services"
+                                    src="./img/Storyboard-bro.png" alt="Projects
+                                    img">
+                                <button class="btn-services">Projects</button>
+                            </div>
+                            <div class="cards">
+                                <h3 class="titulo-card">Progress</h3>
+                                <img class="img-services" src="./img/Progress
+                                    overview-bro.png" alt="Projects img">
+                                <button class="btn-services">Progress</button>
+                            </div>
+                        </div>
+
+                        <div class="container-footer">
+                            <h1 class="titulo-footer">Business</h1>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-solid fa-business-time"></i>
+                        </div>
+                    </div>
+
+                    <script src="./js/script.js"></script>
+                </body>
+            </html>

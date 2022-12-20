@@ -18,51 +18,48 @@ body {
   background-color: #4c4c78;
 }
 
-.nav {
-  margin: 0 7rem;
+/* Nav */
+#header {
+  box-sizzing: border-box;
+  padding: 1rem;
   display: flex;
-  flex-direction: row;
-  padding-top: 2.5rem;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav .logo .titulo-meta-data {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-}
-
-.nav .navigation ul {
+#menu {
   display: flex;
-  flex-direction: row;
-}
-
-.nav .navigation ul li {
+  justify-content: space-between;
   list-style: none;
-  padding: 0 1rem;
+  gap: 0.5rem;
 }
 
-.nav .navigation ul li a {
+a {
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: white;
-  transition: 0.3s ease;
+  color: #fff;
+  padding: 20px;
 }
 
-.nav .navigation ul li a:hover {
+.nav #menu li a:hover {
   color: #0ea5e7;
 }
 
-.nav .navigation ul li a span {
+.nav #menu li a span {
   font-size: 0.9rem;
   border: 1px solid #6927ff;
   padding: 12px 20px;
   border-radius: 5px;
   color: white;
   background: #6927ff;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
 }
 
 .back {
@@ -115,7 +112,7 @@ body {
   color: #b091f8;
 }
 
-.home .texto  {
+.home .texto {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -328,17 +325,81 @@ footer {
 /* Responsividade */
 /* Smartphone  */
 @media screen and (max-width: 767px) {
-  .nav {
-    display: none;
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    transition: 0.6s;
+    z-index: 1000;
+    top: 70px;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    left: 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    color: #9333ea;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+    color: #fff;
+  }
+
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
 
   .home {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 150px;
   }
 
-  .texto-far-awai{
+  .texto-far-awai {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -346,7 +407,7 @@ footer {
 
   .texto {
     display: block;
-    
+    margin-top: 50px;
   }
 
   .titulo-advance {
@@ -370,10 +431,6 @@ footer {
   .img-programming {
     width: 300px;
     height: 300px;
-  }
-
-  .container-section-1 {
-    
   }
 
   .titulo-about {
@@ -465,8 +522,71 @@ footer {
 
 /* Tablete */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .nav {
-    display: none;
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    transition: 0.6s;
+    z-index: 1000;
+    top: 70px;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    left: 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    color: #9333ea;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+    color: #fff;
+  }
+
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
 
   .home {
@@ -502,7 +622,6 @@ footer {
   }
 
   .container-section-1 {
-    
   }
 
   .titulo-about {
@@ -591,5 +710,3 @@ footer {
     cursor: pointer;
   }
 }
-
-  
