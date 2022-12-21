@@ -4,11 +4,11 @@ function toggleMenu(event) {
     const nav = document.getElementById('nav');
     nav.classList.toggle('active');
     const active = nav.classList.contains('active');
-    event.currentTarget.setAtribute('aria-expandend', active);
+    event.currentTarget.setAttribute('aria-expandend', 'true');
     if (active) {
-        event.currentTarget.setAtribute('arial-label', 'Fechar Menu');
+        event.currentTarget.setAttribute('arial-label', 'Fechar Menu');
     } else {
-        event.currentTarget.setAtribute('arial-label', 'Abrir Menu');
+        event.currentTarget.setAttribute('arial-label', 'Abrir Menu');
     }
 }
 

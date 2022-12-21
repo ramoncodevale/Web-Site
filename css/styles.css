@@ -27,9 +27,14 @@ body {
   align-items: center;
 }
 
+.logo{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 #menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly; 
   list-style: none;
   gap: 0.5rem;
 }
@@ -38,6 +43,11 @@ a {
   text-decoration: none;
   color: #fff;
   padding: 20px;
+}
+
+.nav #menu {
+  display: flex;
+  justify-content: center;
 }
 
 .nav #menu li a:hover {
@@ -69,8 +79,8 @@ a {
 }
 
 .img-programming {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   animation: bounce 1s infinite alternate;
   -webkit-animation: bounce 1s infinite alternate;
 }
@@ -95,9 +105,9 @@ a {
 .home {
   margin: 0 7rem;
   display: flex;
+  justify-content: space-evenly;
   flex-direction: row;
   padding-top: 4rem;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -144,14 +154,6 @@ a {
 .home .texto .btn-get:hover {
   background: transparent;
 }
-
-/* .home {
-  width: 52%;
-}
-
-.home {
-  width: 100%;
-} */
 
 /* Container-Section */
 .container-section-1 {
@@ -333,11 +335,13 @@ footer {
     z-index: 1000;
     top: 70px;
     height: 0px;
+    right: 0;
     visibility: hidden;
     overflow-y: hidden;
   }
 
   #nav.active #menu {
+    display: block;
     height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
